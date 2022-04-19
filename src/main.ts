@@ -19,8 +19,8 @@ document.querySelector("button")!.addEventListener("click", function () {
     i < limit;
     i++
   ) {
-    const sLeft = randInt(-5, -10);
-    const sTop = randInt(100, 90);
+    const sLeft = randInt(-20, -10);
+    const sTop = randInt(120, 110);
     const eLeft = randInt(100, 75);
     const eTop = randInt(50, -10);
 
@@ -80,13 +80,16 @@ document.querySelector("button")!.addEventListener("click", function () {
   const h1 = document.createElement("h1");
   h1.innerText = "Happy Birthday";
   main.appendChild(h1);
-  timeline.to(
+
+  timeline.from(
     h1,
     {
-      duration: 4,
-      opacity: 1,
+      duration: 7,
+      top: 0 + "%",
+      left: 100 + "%",
+      opacity: 0,
     },
-    1
+    0
   );
 
   document.querySelector("audio")!.play();
