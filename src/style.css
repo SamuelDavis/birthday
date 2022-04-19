@@ -48,7 +48,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 2;
-  font-size: 5em;
+  font-size: 4em;
   opacity: 0;
   text-align: center;
   line-height: 1em;
