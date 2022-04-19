@@ -15,7 +15,12 @@ document.querySelector("button")!.addEventListener("click", function () {
   document.body.appendChild(main);
 
   let timeline = gsap.timeline();
-  for (let i = 0, limit = randInt(100, 25); i < limit; i++) {
+  for (
+    let i = 0,
+      limit = randInt(window.innerWidth / 10, window.innerWidth / 10 / 4);
+    i < limit;
+    i++
+  ) {
     const sLeft = randInt(-5, -10);
     const sTop = randInt(100, 90);
     const eLeft = randInt(100, 75);
