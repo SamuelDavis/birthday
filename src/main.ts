@@ -2,9 +2,7 @@ import "./style.css";
 
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(TextPlugin);
 
 const randInt = (max = 10, min = 0) =>
   Math.floor(Math.random() * (max - min)) + min;
@@ -80,14 +78,12 @@ document.querySelector("button")!.addEventListener("click", function () {
   }
 
   const h1 = document.createElement("h1");
+  h1.innerText = "Happy Birthday";
   main.appendChild(h1);
   timeline.to(
     h1,
     {
-      duration: 2,
-      text: {
-        value: "Happy Birthday",
-      },
+      duration: 4,
       opacity: 1,
     },
     1
